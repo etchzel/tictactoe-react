@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# TicTacToe with React
+
+React implementation of [Tic Tac Toe](https://github.com/etchzel/tic-tac-toe).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# What I Learned
+
+- Basic React.js (State, Props, Hooks)
 
 ## Available Scripts
 
@@ -68,11 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# TicTacToe with React
-
-React implementation of [Tic Tac Toe](https://github.com/etchzel/tic-tac-toe)
-
-# What I Learned
-
-- Basic React.js (State, Props, Hooks)
