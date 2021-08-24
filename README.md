@@ -4,6 +4,8 @@ React implementation of [Tic Tac Toe](https://github.com/etchzel/tic-tac-toe).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[Live Demo](https://etchzel.github.io/tictactoe-react/).
+
 # What I Learned
 
 - Basic React.js (State, Props, Hooks)
