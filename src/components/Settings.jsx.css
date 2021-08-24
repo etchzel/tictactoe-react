@@ -1,0 +1,93 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 400px;
+}
+
+.ai-mode-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.ai-mode-settings.hidden {
+    display: none;
+}
+
+.game-mode-select, 
+.sign-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.game-mode-select {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0px;
+}
+
+.vs-human, .vs-ai,
+.sign-o, .sign-x {
+    width: 85%;
+    font-size: 40px;
+    padding: 20px 20px;
+    border-radius: 100px;
+}
+
+.sign-o, .sign-x {
+    padding: 0px;
+    height: 60px;
+}
+
+.vs-human.active, 
+.vs-ai.active,
+.sign-o.active,
+.sign-x.active {
+    background-color: #7289da;
+}
+
+@media (max-width: 1000px) {
+    .settings {
+        width: 400px;
+        gap: 20px;
+    }
+
+    .ai-mode-settings {
+        gap: 20px;
+    }
+
+    .game-mode-select {
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+    }
+
+    .vs-human, .vs-ai {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .settings {
+        width: 300px;
+    }
+
+    .vs-human, .vs-ai {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .sign-o, .sign-x {
+        width: 55%;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,79 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 100px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: block;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.restart-btn {
+    padding: 15px 30px;
+    font-size: 40px;
+    border: 0px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 8px rgb(90, 90, 90);
+    background-color: #7289da;
+}
+
+.restart-btn:hover {
+    transform: scale(1);
+    background-color: #85a0ff;
+}
+
+.restart-btn:active {
+    background-color: #85a0ff;
+    box-shadow: 0px 4px rgb(78, 78, 78);
+    transform: translateY(4px);
+}
+
+@media (max-width: 1200px) {
+    .main {
+      justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        gap: 50px;
+        flex-direction: column;
+        padding-left: 0px;
+        justify-content: center;
+    }
+ 
+    .restart-btn {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main {
+        justify-self: center;
+        padding-right: 40px;
+    }
+
+    .restart-btn {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        justify-self: center;
+        padding-right: 20px;
+    }
+}

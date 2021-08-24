@@ -1,0 +1,41 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    margin: 0px auto;
+    border: 2px solid black;
+}
+
+.cell {
+    cursor: pointer;
+    font-size: 100px;
+    height: 148.66px;
+    width: 148.66px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: rgb(216, 216, 216);
+    color: #2e3136;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+@media (max-width: 720px) {
+    .board {
+        width: 255px;
+        height: 255px;
+    }
+
+    .cell {
+        font-size: 40px;
+        height: 83.66px;
+        width: 83.66px;
+    }
+}
