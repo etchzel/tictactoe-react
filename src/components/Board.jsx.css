@@ -27,6 +27,14 @@
     background-color: rgb(180, 180, 180);
 }
 
+.cell.win {
+    background-color: #7289da;
+}
+
+.cell.win:hover {
+    background-color: #7289da;
+}
+
 @media (max-width: 720px) {
     .board {
         width: 255px;

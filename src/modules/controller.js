@@ -36,7 +36,7 @@ const Controller = (() => {
           line.every(i => squares[i] === 'O')
         );
   
-        if (winCond) winner = squares[line[0]];
+        if (winCond) winner = line;
         return winCond;
     });
     return winner;

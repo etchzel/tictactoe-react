@@ -69,11 +69,17 @@ class App extends React.Component {
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
-    const winner = Controller.checkWin(current.squares);
+    const winningLine = Controller.checkWin(current.squares);
 
     let status;
-    if (winner) {
-      status = `Winner: ${winner}`;
+    if (winningLine) {
+      const winner = current.squares[winningLine[0]];
+      status = (
+        `Winner: ${
+          this.state.gameMode ? 
+          winner : (winner === this.state.playerSign ? "Player" : "AI")
+        }`
+      );
     } else if (Controller.checkDraw(current.squares)) {
       status = `Draw`;
     } else {
@@ -96,6 +102,7 @@ class App extends React.Component {
             <Board 
               squares={current.squares}
               onClick={(i) => this.moveHandler(i)}
+              onWin={winningLine ? winningLine : null}
             />
           </div>
           <div className="options">

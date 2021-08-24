@@ -2,20 +2,30 @@ import React from 'react';
 import './Board.jsx.css';
 
 function Square(props) {
+  const highlightWin = (win) => {
+    if (win) return "win";
+    return "";
+  }
+
   return (
-    <button className="cell" onClick={() => props.onClick()}>
+    <button 
+      className={`cell ${highlightWin(props.onWin)}`} 
+      onClick={() => props.onClick()}
+    >
       {props.value}
     </button>
   );
 };
 
 function Board(props) {
+
   const renderSquare = (i) => {
     return (
       <Square
         key={`cell-${i.toString()}`}
         value={props.squares[i]} 
         onClick={() => props.onClick(i)}
+        onWin={props.onWin ? props.onWin.some(c => c === i) : null}
       />
     );
   }
